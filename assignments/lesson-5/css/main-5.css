@@ -7,30 +7,131 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  font-size: 16px;
-  font-family: 'McLaren', impact, helvetica;
+    font-size: 16px;
+    font-family: 'McLaren', impact, helvetica;
 }
 
-header, nav, main, footer {
-  max-width: 750px;
+.content {
+    max-width: 400px;
 }
 
-header {}
-header h1 {}
-header img {}
-header .subheading {}
+/* ------------ IMAGES ------------ */
 
-nav {}
+.site-image, .article-image {
+    width: 100%;
+}
+.logo {
+    width: 100px;
+    float: left;
+}
+.sunny {
+    width: 50px;
+    position: relative;
+}
+
+/* ------------ HEADER ------------ */
+
+h1 {
+    float: right;
+    text-shadow: 3px 3px #cfcfcf;
+}
+.subheading {
+    float: right;
+}
+
+/* ------------ NAVIGATION ------------ */
+
+nav {
+    max-width: 400px;
+}
 nav button {}
-nav ul {}
-nav ul li {}
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+}
+nav ul li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+nav ul li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #4CAF50;
+    color: white;
+}
+nav ul li a:hover {
+    background-color: #555;
+    color: white;
+}
 
-main {}
-main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { }
+/* ------------ MAIN ------------ */
 
-footer {}
+.current p {
+    text-align: center;
+    display: inline-block;
+}
+main figure {
+    margin: 0 0 .2rem 2%; width:96%;
+}
+.weather-summary {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+/* ------------ 10 DAY FORECAST ------------ */
+
+.forecast {
+    display: none;
+}
+
+/* ------------ HIGHLOW ------------ */
+
+.highlow p {
+    text-align: center;
+    display: inline;
+    padding-top: 50px;
+}
+
+/* ------------ CONDITIONS ------------ */
+
+.conditions p {
+    text-align: center;
+}
+
+/* ------------ ARTICLE ------------ */
+
+h3 {
+    text-align: center;
+}
+.town-news {
+    text-align: justify;
+    padding: 3px;
+    border: 1px solid #cfcfcf;
+}
+
+/* ------------ CONTACT INFO ------------ */
+
+.contact {
+    background-color: #cfcfcf;
+    padding: 30px;
+    text-align: center;
+}
+
+/* ------------ FOOTER ------------ */
+
+.footer-bar {
+    font-size: 10px;
+    background-color: #c0c0c0;
+    padding: 10px;
+    text-align: center;
+}
