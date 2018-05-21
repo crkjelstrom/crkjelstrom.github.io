@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=McLaren|Nanum+Myeongjo:800|Permanent+Marker|Dosis');
+/* font-family: 'Permanent Marker', cursive;
+*  font-family: 'Nanum Myeongjo', georgia; serif;
+*  font-family: 'McLaren', impact, helvetica;
+*/
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: 'McLaren', impact, helvetica;
+}
+
+header, nav, main, footer {
+  max-width: 750px;
+}
+
+header {}
+header h1 {}
+header img {}
+header .subheading {}
+
+nav {}
+nav button {}
+nav ul {}
+nav ul li {}
+nav ul li a {}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { }
+
+footer {}
