@@ -82,11 +82,28 @@
         <footer>
             <p class="contact">&copy;2018 | Carly Kjelstrom | Email: ste12063@byui.edu | Phone: 555-555-5555 | <a class="terms" href="https://termsfeed.com/blog/sample-terms-and-conditions-template/">Terms of Use</a></p>
  
-            <p class="datestamp">Monday, April 6, 2020</p>
+            <p class="datestamp">Wednesday, June 13, 2018</p>
         </footer>
-        <script type="text/javascript" src="js/windchill.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script>
+             jQuery(document).ready(function($){
+                  // Get current path and find target link
+                  var path = window.location.pathname.split("/").pop();
+
+                  // Account for home page with empty path
+                  if ( path == '' ) {
+                    path = 'index.php';
+                  }
+
+                  var target = $('nav a[href="'+path+'"]');
+                  // Add active class to target link
+                  target.addClass('active');
+                });
+    </script>
+    <script type="text/javascript" src="js/responsiveMenu.js" defer></script> 
+    <script type="text/javascript" src="js/stormseverity.js" async></script>
     <script language="javascript">
-    document.title = "Franklin";
+    document.title = "Storm Center";
 </script>
     </body>
 </html>
