@@ -10,7 +10,11 @@ html { -webkit-text-size-adjust: none}
 /*-----------apply a natural box layout model to all elements -------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-
+#town {
+    text-align: center;
+    font-family: 'McLaren', impact, helvetica;
+    font-size: 30px;
+}
 
 /* header */
 
