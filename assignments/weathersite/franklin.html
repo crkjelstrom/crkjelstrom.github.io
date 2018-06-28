@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+         <meta charset="utf-8">
+        <meta name="description" content="The weather page for Franklin on Forecast For You website.">
+        <title>Carly's Forecast for You</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/normalize.css" rel="stylesheet" >
+        <link href="css/main-8.css" rel="stylesheet" >
+        <link href="css/medium-8.css" rel="stylesheet" >
+        <link href="css/large-8.css" rel="stylesheet" >
+         
+    </head>
+    <body>
+        <header class="logoheader">
+            <img src="images/colors.png" alt="logo" />
+            <h1>Forecast For You</h1>
+            <h4 class="slogan">All you need to know!</h4> 
+        </header>
+        <nav class="navigation">
+            <button onclick="myFunction()">&#9776;</button>
+            <ul id="primaryNavigation" class="hide">
+                <li><a href="index-9.html">Home</a></li>
+                <li><a href="franklin-8.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter-8.html">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul> 
+        </nav>
+        <main>
+            <h2 class="weathernow">Franklin Weather Now</h2>
+            <ul class="franklin">
+                <li>Summary: <b>Sunny</b></li>
+                <li>High: <b>90&#8457;</b></li>
+                <li>Low: <b>60&#8457;</b></li>
+                <li>Precipitation: <b>0&#37;</b></li>
+                <li>Max Wind: <b>5 mph SW</b></li>
+                <li>Wind Chill: <b><strong id="windchill">&deg;F</strong></b></li>
+            </ul>
+            
+            <div class="photoFullWidth">
+                <img src="images/franklin-original.jpeg" alt="franklin landscape" sizes="100vw"
+                     srcset="images/franklin-original.jpeg 400w, images/franklin-original.jpeg 800w, images/franklin-original.jpeg 1200w">
+            </div>
+            
+            <article class="town-news">
+      <h3>Franklin Breaks Record</h3>	
+      <p class="town-article">One of the most intense arctic outbreaks of the 20th century occurred January 18-22, 1985.  Extremely cold temperatures affected every state east of the Rockies with three new state record lows established: -34&deg; at Mt. Mitchell, North Carolina, -19&deg; at Caesar's Head, South Carolina; and -30&deg; at Mountain Lake, Virginia.  According to newspaper reports at least 165 fatalities were attributed to the weather.  The inauguration parade for President Reagan's second term was canceled with wind chills in Washington DC colder than -10&deg; F.  Florida's Secretary of Agriculture termed this the "freeze of the century" with the state's citrus industry suffering $2.5 billion in losses.
+      </p>
+    </article>
+            
+            <h3 class="tenday">10 Day Weather Forecast</h3>
+            <table class="hidesmall">
+                <tr class="tendaybackground">
+                    <th>Day 1</th>
+                    <th>Day 2</th>
+                    <th>Day 3</th>
+                    <th>Day 4</th>
+                    <th>Day 5</th>
+                    <th>Day 6</th>
+                    <th>Day 7</th>
+                    <th>Day 8</th>
+                    <th>Day 9</th>
+                    <th>Day 10</th>
+                    </tr>
+                    <tr>
+                    <td>89&deg;F</td>
+                    <td>87&deg;F</td>
+                    <td>78&deg;F</td>
+                    <td>75&deg;F</td>
+                    <td>72&deg;F</td>
+                    <td>72&deg;F</td>
+                    <td>79&deg;F</td>
+                    <td>83&deg;F</td>
+                    <td>85&deg;F</td>
+                    <td>89&deg;F</td>
+                </tr>
+            </table>
+        </main>
+        <br>
+        <footer>
+            <p class="contact">&copy;2018 | Carly Kjelstrom | Email: ste12063@byui.edu | Phone: 555-555-5555 | <a class="terms" href="https://termsfeed.com/blog/sample-terms-and-conditions-template/">Terms of Use</a></p>
+                <span id="demo"></span>
+        </footer>
+        <script>var d = new Date();document.getElementById("demo").innerHTML = d;</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script>
+             jQuery(document).ready(function($){
+                  // Get current path and find target link
+                  var path = window.location.pathname.split("/").pop();
+
+                  // Account for home page with empty path
+                  if ( path == '' ) {
+                    path = 'index.php';
+                  }
+
+                  var target = $('nav a[href="'+path+'"]');
+                  // Add active class to target link
+                  target.addClass('active');
+                });
+    </script>
+    <script type="text/javascript" src="js/hamburger.js" defer></script> 
+    <script type="text/javascript" src="js/windchill.js"></script>
+    <script type="text/javascript" src="js/stormseverity.js" async></script>
+    <script language="javascript">
+    document.title = "Storm Center";
+</script>
+    </body>
+</html>

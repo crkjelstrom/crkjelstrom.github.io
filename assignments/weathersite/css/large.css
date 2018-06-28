@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=McLaren|Nanum+Myeongjo:800|Permanent+Marker|Dosis');
+/* font-family: 'Permanent Marker', cursive;
+*  font-family: 'Nanum Myeongjo', georgia; serif;
+*  font-family: 'McLaren', impact, helvetica;
+*/
+
+@media only screen and (min-width: 1141px){
+ 
+    
+    
+    /* header */
+       
+header {
+    font-size: large;
+}
+    
+/* nav */
+    
+nav ul li {
+        flex-basis: auto; 
+        -ms-flex: auto;
+    }
+    
+    nav ul li {
+        -ms-flex: 0 0 auto;
+    }
+     
+.navigation {
+    margin-left: -10px;
+    overflow: hidden;
+    background-color: #15aadc;
+}
+
+.navigation li a {
+    color: #000000;
+    font-size: 27px;
+    padding: 10px 15px 10px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navigation li a:hover {
+    background-color: #c0c0c0;
+    color: #000000;
+}
+    
+/* main */
+    
+.weathernow {
+    font-size: xx-large;
+}
+    .franklin li {
+        font-size: x-large;
+    }
+    
+    .Springfield li {
+        font-size: x-large;
+    }
+    
+    .Greenville li {
+        font-size: x-large;
+    }
+    
+.tenday {
+    display: block;
+    font-size: xx-large;
+}
+.hidesmall {
+    display: block;
+    margin-left: 28px;
+    }
+th {
+    font-size: x-large;
+}
+td {
+    font-size: x-large;
+}
+    
+/*  Weather Gallery Grid */
+	div.weatherGallery {
+  		grid-template-columns: repeat(3, 32%);
+	}
+	div.weatherGallery figure:hover {
+		box-shadow: 3px 3px 9px rgba(0,2,2,1);
+	}
+    div.citygrid {
+  		grid-template-columns: repeat(3, 32%);
+	}
+	div.citygrid figure:hover {
+		box-shadow: 3px 3px 9px rgba(0,2,2,1);
+	}
+
+}  /* end of media query */
