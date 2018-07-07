@@ -30,6 +30,11 @@
             
             var elem = document.querySelector(".navigation > li:nth-child(3) > a");
                 elem.style.color = '#ff0000';
+                
+            var eleme = document.querySelectorAll(".navigation > li:nth-child(even) > a");
+                for (var i = 0; I < eleme.length; i++){
+                    eleme[i].style.color = '#ff8c00';
+                }
 		  }
         })
 	</script>
