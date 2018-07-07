@@ -41,6 +41,7 @@ body {
 	float:left;
 	background:url('../img/logo.png');
 	background-color:rgb(235, 253, 212);
+	opacity:1.0;
 }
 
 .navbar {
@@ -236,6 +237,7 @@ body {
 .box3 select {
 	position: absolute;
 	top: 194px;
+	left:0px;
 	padding: 20px;
 	width: 305px;
 	border: none;
@@ -274,6 +276,13 @@ body {
 	text-decoration: none;
 	font-weight: normal;
 	color:inherit;
+}
+
+.footer li {
+    float: right;
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
 }
 
 
